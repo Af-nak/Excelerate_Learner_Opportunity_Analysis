@@ -82,7 +82,7 @@ To deliver accurate, actionable insights on learner engagement and opportunity o
 |---|---|
 | SQL | Data profiling, joining, cleaning, type conversion, deduplication, and analysis |
 | Looker Studio | Interactive dashboards, KPI cards, and reporting |
-| PowerPoint | Final project presentation (`Learner_Opportunity_Analysis_v2.pptx`) |
+| PowerPoint | Final project [Presentation](./Excelerate%20Presentation.pptx)|
 
 
 
@@ -92,8 +92,8 @@ Two tables were profiled separately and then integrated using a `LEFT JOIN`.
 
 | Table | Rows | Columns |
 |---|---:|---:|
-| `opportunity_data` | 5,733 | 33 |
-| `learner_tbl` | 15,397 | 43 |
+| opportunity_data | 5,733 | 33 |
+| learner_tbl | 15,397 | 43 |
 | Integrated dataset | 15,397 | 76 |
 
 ### Join Logic
@@ -104,15 +104,6 @@ The join was performed after normalising the `Learner#` / `Opportunity#` format.
 
 **Time Span:** Approximately 4 years, based on `apply_date`.
 
-### Three Levels of Measurement
-
-| Level | Description |
-|---|---|
-| Record-level | Every row; not all rows represent applications |
-| Application-level | Rows with an `application_id`, used for completion and acceptance analysis |
-| Opportunity-level | Fee, duration, scholarship, and reward values repeat per opportunity and must be normalised before summing |
-
----
 
 ## 6. Analysis Approach
 
@@ -126,7 +117,6 @@ The join was performed after normalising the `Learner#` / `Opportunity#` format.
 
 **Techniques Used:** Descriptive statistics · Segmentation · Trend analysis · Correlation analysis
 
----
 
 ## 7. Exploratory Data Analysis (EDA)
 
@@ -150,7 +140,6 @@ Different metrics use different denominators:
 - **Paid Conversion:** Uses only records with a payment status. There were 8,529 unpaid and 6,363 paid records; blanks were not counted as unpaid.
 - **Application Stage:** 10.76% of records contained a value in `application_id`. Because the field includes question responses and placeholders rather than reliable IDs, it was treated as an indicator of application-stage progression rather than a row key.
 
----
 
 ## 8. Data Cleaning & Quality Improvements
 
