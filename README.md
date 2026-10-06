@@ -101,6 +101,7 @@ Two tables were profiled separately and then integrated using a `LEFT JOIN`.
 `learner_tbl.sk = opportunity_data.opportunity_id`
 
 The join was performed after normalising the `Learner#` / `Opportunity#` format. Learner-side records were retained.
+![SQL join](Image/Sql_integration.png)
 
 **Time Span:** Approximately 4 years, based on `apply_date`.
 
@@ -154,7 +155,9 @@ All cleaning was performed in SQL.
 | Exact Duplicates | 538 of 15,397 rows (3.5%) were identical across all 76 columns. | Deduplicated to retain one copy and audited separately. |
 | `application_id` | Populated in 1,657 rows (10.76%) with only 248 distinct values. The field included essay text and placeholders such as `111111`. | Not used as a row key. Application metrics use only rows with a usable value, with limitations noted. |
 | Duration | 139 records across 15 opportunities had a duration exceeding 4 years. | Flagged as errors and removed. |
-| Role (Test) | 447 records across 112 opportunities had a role containing `"test"`. | Flagged as test records and removed from analysis. |
+| Role (Test) | 447 records across 112 opportunities had a role containing `"test"`. | Flagged as test records and removed from analysis. 
+
+![SQL Dataset Audit](Image/Sql_data_audit.png)
 
 ### 8.2 Types, Nulls & Categories
 
@@ -191,7 +194,6 @@ A total of **6,915 rows were removed** through the identifier criteria, test-rol
 | `COUNT(DISTINCT pk)` | 597 | 551 |
 | `COUNT(DISTINCT opportunity_id)` | 5,733 | 3,045 |
 
----
 
 ## 9. Data Analysis
 
@@ -222,42 +224,40 @@ After cleaning, the data was segmented and analysed in SQL and Looker Studio acr
 | Rewards | 3,755 |
 | Paid Conversion | 5.65% |
 
-> **Note on completion rates:** The ~7% figure represents the share of application-stage records that were completed. The 23.1% figure represents the opportunity completion rate. These are different measures with different denominators.
-
----
 
 ## 10. Dashboards
 
-**[Open the Full Interactive Dashboard in Looker Studio](#)**
+**[Open the Full Interactive Dashboard in Looker Studio](https://datastudio.google.com/reporting/eaa5661f-8f42-44c9-a769-ace0c079b084)**
 
 ### Dashboard Objectives
 
 The dashboards were built to track opportunity sign-up performance and answer the following questions:
 
-| # | What the Dashboard Solves | Where It Is Answered |
-|---:|---|---|
-| 1 | Completion rates across opportunities | Dashboard 1 · Dashboard 2 |
-| 2 | Reward distribution | Dashboard 3 |
-| 3 | Application and sign-up trends over time | Dashboard 1 |
-| 4 | Scholarship distribution by category | Dashboard 3 |
-| 5 | Lead source performance | Dashboard 1 · Dashboard 2 |
-| 6 | Opportunities with the highest and lowest sign-ups | Dashboard 2 |
-| 7 | Opportunities with the highest and lowest completion rates | Dashboard 2 |
-| 8 | Opportunities with the highest and lowest rewards | Dashboard 3 |
-| 9 | Application counts over the last 7 days | Dashboard 2 |
-| 10 | Application trends across the last 6 months | Dashboard 1 |
-| 11 | Opportunity distribution by lead source | Dashboard 1 · Dashboard 2 |
-| 12 | Percentage difference between Q4 2025 and Q1 2026 | Dashboard 1 |
+## What the Dashboard Answers
+- How many learners signed up for opportunities?
+- How many learners progressed from sign-up to application?
+- What percentage of applications were completed?
+- Where are learners dropping off in the opportunity journey?
+- Which opportunities attract the most sign-ups?
+- Which opportunities have the highest completion rates?
+- How do sign-ups and completions change over time?
+- Which categories and lead sources perform best?
+- How are rewards distributed across opportunities?
+- How does scholarship availability vary by opportunity category?
+- What areas present the biggest opportunities for improving learner outcomes?
 
 ### Dashboard 1: Overview, Opportunity Rankings & Lead Source
 
-| Section | Highlights |
-|---|---|
-| KPI Cards | 8.5K sign-ups, 1,564 applications, 551 learners, ~7% of applications completed, and a 33.94% decline in sign-ups from Q4 2025 to Q1 2026 |
-| Conversion Trend | Applications increase across the year while sign-ups spike and fall; the two measures do not move together |
-| Categories & Ranking | Internship: 3,163 sign-ups and 10.36% completed. Competition: 1,083 of 1,564 applications. Course: 664 sign-ups but only 4 applications. Masterclass: 11.11% completion on 18 applications |
-| Lead Sources | Social Media is the largest source but only ~7% completed, showing that volume does not necessarily translate to conversion |
-| Six-Month Momentum | 187 → 221 → 216 → 132 → 90 → 116 sign-ups from November to April, with a December peak, March low, and April partial rebound |
+## Dashboard Highlights
+- **KPI Cards:** 8.5K sign-ups, 1,564 applications, 551 learners, ~7% of applications completed, and a 33.94% decline in sign-ups from Q4 2025 to Q1 2026.
+- **Conversion Trend:** Applications increase across the year while sign-ups spike and fall; the two measures do not move together.
+- **Categories & Ranking:** Internship recorded 3,163 sign-ups with 10.36% completed. Competition recorded 1,083 of 1,564 applications. Course had 664 sign-ups but only 4 applications. Masterclass recorded 11.11% completion from 18 applications.
+- **Lead Sources:** Social Media is the largest source but only ~7% completed, showing that volume does not necessarily translate to conversion.
+- **Six-Month Momentum:** Sign-ups moved from 187 → 221 → 216 → 132 → 90 → 116 from November to April, with a December peak, March low, and April partial rebound.
+
+### Dashboard Preview
+
+[![Dashboard Overview](./Excelerate%20dashboard/dashboard_one.png)](https://datastudio.google.com/reporting/eaa5661f-8f42-44c9-a769-ace0c079b084)
 
 ### Dashboard 2: Sign-Up & Completion Performance
 
