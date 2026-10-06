@@ -21,7 +21,6 @@ Analyzing learner sign-ups, applications, and completions for Excelerate using S
 13. [Conclusion](#13-conclusion)
 14. [Project Contributions](#14-project-contributions)
 
----
 
 ## 1. Project Overview
 
@@ -45,7 +44,6 @@ Excelerate connects learners with growth opportunities such as internships, care
 - Insights tied to key KPIs
 - Actionable recommendations
 
----
 
 ## 2. Business Problem
 
@@ -57,15 +55,13 @@ Excelerate attracts strong participation, but it is unclear how many learners ac
 - Which lead sources bring in learners who progress rather than only register?
 - Are rewards and scholarships reaching learners who engage and complete?
 
-> **The opportunity is not just more sign-ups. It is helping more learners move forward.**
 
----
 
 ## 3. Team Charter
 
 ### Team Mission
 
-Deliver accurate, actionable insights on learner engagement and opportunity outcomes that help Excelerate connect more learners with the right opportunities.
+To deliver accurate, actionable insights on learner engagement and opportunity outcomes that help Excelerate connect more learners with the right opportunities.
 
 ### Team Values
 
@@ -73,14 +69,12 @@ Deliver accurate, actionable insights on learner engagement and opportunity outc
 
 | Role | Team Member | Responsibility |
 |---|---|---|
-| Project Lead | Naheemat Akinyemi | Provides overall direction for the project and ensures the team stays aligned with project objectives |
-| Team Lead | Ilqha Mabroor Gana Roushan | Guides the team's work, assigns tasks, reviews progress, and ensures quality |
+| Project Lead | Naheemat Akinyemi | Provides overall direction for the project, assigns tasks, and ensures the team stays aligned with project objectives |
+| Team Lead | Ilqha Mabroor Gana Roushan | Guides the team's work, reviews progress, and ensures quality |
 | Project Manager | Laiba Mir | Oversees the project, coordinates task timelines, and ensures deliverables are completed |
 | Project Scribe | Omoze Ogwogho | Documents meetings, decisions, progress, and important project updates |
 
-**Ways of Working:** Weekly syncs · Shared workspace · Peer review
 
----
 
 ## 4. Tools & Technologies
 
@@ -90,7 +84,7 @@ Deliver accurate, actionable insights on learner engagement and opportunity outc
 | Looker Studio | Interactive dashboards, KPI cards, and reporting |
 | PowerPoint | Final project presentation (`Learner_Opportunity_Analysis_v2.pptx`) |
 
----
+
 
 ## 5. Dataset Overview
 
