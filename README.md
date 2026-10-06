@@ -233,7 +233,7 @@ After cleaning, the data was segmented and analysed in SQL and Looker Studio acr
 
 The dashboards were built to track opportunity sign-up performance and answer the following questions:
 
-## What the Dashboard Answers
+### What the Dashboard Answers
 - How many learners signed up for opportunities?
 - How many learners progressed from sign-up to application?
 - What percentage of applications were completed?
@@ -248,38 +248,34 @@ The dashboards were built to track opportunity sign-up performance and answer th
 
 ### Dashboard 1: Overview, Opportunity Rankings & Lead Source
 
-## Dashboard Highlights
 - **KPI Cards:** 8.5K sign-ups, 1,564 applications, 551 learners, ~7% of applications completed, and a 33.94% decline in sign-ups from Q4 2025 to Q1 2026.
 - **Conversion Trend:** Applications increase across the year while sign-ups spike and fall; the two measures do not move together.
 - **Categories & Ranking:** Internship recorded 3,163 sign-ups with 10.36% completed. Competition recorded 1,083 of 1,564 applications. Course had 664 sign-ups but only 4 applications. Masterclass recorded 11.11% completion from 18 applications.
 - **Lead Sources:** Social Media is the largest source but only ~7% completed, showing that volume does not necessarily translate to conversion.
 - **Six-Month Momentum:** Sign-ups moved from 187 → 221 → 216 → 132 → 90 → 116 from November to April, with a December peak, March low, and April partial rebound.
 
-### Dashboard Preview
-
 [![Dashboard Overview](./Excelerate%20dashboard/dashboard_one.png)](https://datastudio.google.com/reporting/eaa5661f-8f42-44c9-a769-ace0c079b084)
 
 ### Dashboard 2: Sign-Up & Completion Performance
 
-| Section | Highlights |
-|---|---|
-| KPI Cards | 90.8% acceptance rate, 215 rejected sign-ups, and 23.1% opportunity completion rate |
-| Sign-Up Extremes | Trainee Internship drives the most sign-ups; the lowest-sign-up list is mostly made up of test or placeholder records |
-| Highest Completion Rates | Highest rates are led by small or test records, so completion rates should be interpreted alongside volume |
-| Lead Source Table | Social Media: 3,626 sign-ups and 6.96% completed. Illinois Tech: 2,094 and 8.68%. Saint Louis Univ.: 614 and 8.78%. Google Search: 528 sign-ups and 0 applications |
-| Last 7 Days | Application activity fell to zero on April 18–19 and returned to 7 on April 20 |
+- **KPI Cards:** 90.8% acceptance rate, 215 rejected sign-ups, and 23.1% opportunity completion rate.
+- **Sign-Up Extremes:** Trainee Internship drives the most sign-ups, while the lowest-sign-up opportunities are mostly test or placeholder records.
+- **Highest Completion Rates:** The highest rates are led by small or test records, so completion rates should be interpreted alongside volume.
+- **Lead Source Table:** Social Media recorded 3,626 sign-ups and 6.96% completed. Illinois Tech recorded 2,094 and 8.68%. Saint Louis Univ. recorded 614 and 8.78%. Google Search recorded 528 sign-ups and 0 applications.
+- **Last 7 Days:** Application activity fell to zero on April 18–19 and returned to 7 on April 20.
+
+[![Dashboard 2](./Excelerate%20dashboard/dashboard_two.png)](https://datastudio.google.com/reporting/eaa5661f-8f42-44c9-a769-ace0c079b084)
 
 ### Dashboard 3: Rewards, Scholarships & Program
 
-| Section | Highlights |
-|---|---|
-| KPI Cards | 2,729 scholarship opportunities, 560.5K scholarship value, 3,755 rewards, and 5.65% paid conversion |
-| Scholarship by Category | Internship: 176.3K, Competition: 109.8K, Career: 86.4K, Course: 41.9K, and Job Simulation: 10.2K |
-| Top Opportunities | Scholarship and reward leaders are different opportunities. Full Stack Web Dev leads scholarships at 50K, while Internship Automation leads rewards at 16.3 |
-| Value Distribution | Most scholarship records fall within the 101–200 band, with approximately 2.1K records; 316 have zero value |
-| Currency & Duration | USD accounts for 76.6%, EUR 13.7%, and INR 9.7%. Most categories have an average duration of 21–25 weeks |
+- **KPI Cards:** 2,729 scholarship opportunities, 560.5K scholarship value, 3,755 rewards, and 5.65% paid conversion.
+- **Scholarship by Category:** Internship: 176.3K, Competition: 109.8K, Career: 86.4K, Course: 41.9K, and Job Simulation: 10.2K.
+- **Top Opportunities:** Scholarship and reward leaders are different opportunities. Full Stack Web Dev leads scholarships at 50K, while Internship Automation leads rewards at 16.3.
+- **Value Distribution:** Most scholarship records fall within the 101–200 band, with approximately 2.1K records; 316 have zero value.
+- **Currency & Duration:** USD accounts for 76.6%, EUR 13.7%, and INR 9.7%. Most categories have an average duration of 21–25 weeks.
 
----
+[![Dashboard 3](./Excelerate%20dashboard/dashboard_three.png)](https://datastudio.google.com/reporting/eaa5661f-8f42-44c9-a769-ace0c079b084)
+
 
 ## 11. Key Insights
 
@@ -303,29 +299,42 @@ Social Media generated the largest identifiable learner group, but downstream pr
 
 The distribution of rewards and scholarships does not consistently match completion performance, suggesting that incentives may not be reaching the learners most likely to engage and complete.
 
----
-
 ## 12. Recommendations
 
-| Priority | Recommendation | Action |
-|---:|---|---|
-| 1 | Close the Funnel Gap | Track sign-up → application → completion and provide targeted support at the weakest step |
-| 2 | Rank Opportunities by Completion, Not Sign-Ups | Scale or redesign opportunities based on completion rate, using a minimum-application threshold |
-| 3 | Diagnose and Stabilise the Sign-Up Decline | Investigate the Q4 2025 to Q1 2026 decline and plan campaigns around monthly fluctuations |
-| 4 | Invest in Lead Sources by Conversion | Shift acquisition efforts toward sources that produce learner progression, not just registrations |
-| 5 | Align Rewards and Scholarships With Outcomes | Review who receives incentives and pilot awards linked to engagement and completion |
+### 1. Close the Funnel Gap
+Track the full sign-up → application → completion journey and provide targeted support at the weakest step.
 
----
+### 2. Rank Opportunities by Completion, Not Sign-Ups
+Evaluate opportunities based on completion rate alongside volume, using a minimum-application threshold to avoid misleading results from small records.
+
+### 3. Diagnose and Stabilise the Sign-Up Decline
+Investigate the 33.94% decline from Q4 2025 to Q1 2026 and plan campaigns around monthly fluctuations.
+
+### 4. Invest in Lead Sources by Conversion
+Shift acquisition efforts toward lead sources that drive learner progression, not just high registration volumes.
+
+### 5. Align Rewards and Scholarships With Outcomes
+Review how incentives are distributed and pilot reward structures linked to learner engagement and completion.
 
 ## 13. Conclusion
 
-The analysis shows a clear gap between learner acquisition and learner progression:
+This project provided a comprehensive view of the Excelerate learner journey, from initial sign-up through application and completion. By combining SQL-based analysis with Looker Studio dashboards, the project transformed raw learner and opportunity data into insights that can support better decision-making and opportunity management.
 
-```text
-8.5K Sign-ups
-      │
-      ▼
-1,564 Applications
-      │
-      ▼
-~7% Completed
+The analysis revealed a clear gap between learner interest and progression. While the platform recorded approximately 8.5K sign-ups, only 1,564 reached the application stage, with approximately 7% of applications completed. This indicates that generating learner interest is not the only challenge; improving movement through the funnel is equally important.
+
+The analysis also showed that high sign-up volume does not always translate into strong completion outcomes. Some opportunities attracted large numbers of learners but recorded relatively low completion, while some opportunities with higher completion rates had very small volumes. This highlights the importance of evaluating opportunities using both volume and meaningful completion metrics rather than relying on sign-ups alone.
+
+A decline of 33.94% in sign-ups from Q4 2025 to Q1 2026 was also identified, alongside noticeable fluctuations in monthly activity. Lead-source analysis further showed that the largest acquisition channels were not necessarily the most effective at driving learner progression. These findings suggest that future growth strategies should focus not only on attracting more learners but also on improving conversion and engagement at each stage of the journey.
+
+Overall, the dashboards provide a practical foundation for monitoring learner behaviour, identifying drop-off points, comparing opportunity performance, and evaluating the relationship between acquisition, engagement, rewards, and scholarships. The recommendations developed from these findings can help Excelerate move toward a more data-driven approach to opportunity design, learner support, acquisition, and outcome improvement.
+
+The project also strengthened the team's practical experience in data cleaning, SQL analysis, dashboard development, data storytelling, collaboration, and presenting insights to stakeholders.
+
+## 14. Project Contributions
+
+| Team Member | Contribution |
+|---|---|
+| **Laiba Mir** | EDA and data profiling |
+| **Ilqha Mabroor Gana Roushan** | Looker Studio setup, data integration, and data cleaning |
+| **Naheemat Akinyemi** | SQL environment setup, analysis, dashboard design, and presentation design |
+| **Omoze Ogwogho** | Weekly report collation |
